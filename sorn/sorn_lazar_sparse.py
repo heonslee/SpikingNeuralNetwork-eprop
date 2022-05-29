@@ -2,13 +2,9 @@ import numpy as np
 import matplotlib.pyplot as plt
 import copy
 import sys
-sys.path.append(r'C:\Users\yowch\Dropbox\mypy\functions')
-# sys.path.append(r'E:\Dropbox (Personal)\mypy\functions')
-from time_hs import *
-import visual_hs as vh
+sys.path.append('../../catchall')
 import numba as nb
 import bct
-vh.defaultFigOptions2()
 #%% function
 @nb.jit(nopython=True)
 # @nb.jit(nopython=True, parallel=True) # This is slower for small network, but faster for large network
